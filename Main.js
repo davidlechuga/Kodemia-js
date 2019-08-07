@@ -324,3 +324,11 @@ function uppercase(str)
 }
 console.log(uppercase("quiero un pony :3"));  
 */
+
+
+//  UPDATES OF BRANCHES CHANGES ///
+
+
+// UPPDATES OF Class/2019-08-30  TO  master   //  
+
+
