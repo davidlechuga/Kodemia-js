@@ -331,4 +331,8 @@ console.log(uppercase("quiero un pony :3"));
 
 // UPPDATES OF Class/2019-08-30  TO  master   //  
 
-
+console.group("bucleFor");
+    for(var i=100; i>0; i--){
+        console.info("Iteración numero %i", i)
+    }
+    console.groupEnd();
