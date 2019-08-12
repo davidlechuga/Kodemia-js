@@ -12,13 +12,26 @@ while(number < 10) {
     number++
 }
 
-
-
-
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
             // ------------- Exercise 8 --------------- //  
+
+//  eleva cada uno de los numeros a la 2 e imprimelos
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+var i = 0
+
+while (i < numbers.length) {
+  console.log(numbers[i] ** 2)
+  i++
+}
+
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+            // ------------- Exercise 9 --------------- //  
 
 //////////  dado tu nombre fecha de --- Nacimiento  ---  Nombre 
 /////// ---  Apellidos  ---  Genero   ---  Lugar de nacimiento.
@@ -49,7 +62,7 @@ while(number < 10) {
   //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
   //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
   //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-            // ------------- Exercise 9 --------------- //  
+            // ------------- Exercise 10 --------------- //  
   // Dado tu nombre, apellidos, fecha de nacimiento, genero
   // y lugar de nacimiento dar la primera parte del CURP
   // 14-11-1996
@@ -76,7 +89,7 @@ var curp = `${abbreviationName}${year}${month}${day}${abbreviationGender}${birth
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-        // ------------- Exercise 10 --------------- //  
+        // ------------- Exercise 11 --------------- //  
 
 // scope de arrow funcion es global
 // new es una referencia o insaciacion de los objetos         //
@@ -91,7 +104,7 @@ var dogObj = {
 //  dogObj.name  ** es la propiedad del objeto**
 //  metodos son funciones dentro de objetos.
 
-dodObj ['favoriteFood'] = Pizza
+dogObj ['favoriteFood'] = Pizza
 //se inserta un nuevo key value al objeto
 
 
@@ -100,17 +113,21 @@ delete dogObj.favoriteFood
 // eliminatr la propiedad del objeto.
 
 
+//  Crea el objeto carro 
+// y crea una constante element que para cada 
+// propiedad del objeto "carro" imprima en consola
+// mediante 
 
 var carro = {
-    'color': 'red',
+    'color': ['red', 'yellow', 'whithe' ],
     'tipo': 'crossover',
     'año': '2019',
     'puertas': 4,
 
 }
 
-for ( const properties in carro ) {
-    console.log(`${properties}:${carro[properties]}`)
+for ( const element in carro ) {
+    console.log(`${element}:${carro[element]}`)
 }
 
 
@@ -118,8 +135,8 @@ for ( const properties in carro ) {
 //  muestra la tabla en consola.
 //  son metodos del objeto object  // SON METODOS DEL OBJETO OBJET
 
-carro.color.negro[2]
-carro.color.negro
+carro.color[2]
+carro.color
 
 
 ///dada una propiedad ver a regresar true si encuentra propertie en el objeto
@@ -145,7 +162,7 @@ Object.getOwnPropertyDescriptor(carro , 'color')
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-        // ------------- Exercise 11 --------------- //
+        // ------------- Exercise 12 --------------- //
         
       //metdos son funciones como propiedades de los objetos
       //  las acciones son metodos
@@ -221,8 +238,7 @@ var arrays = DLH.map (function (DLH) {
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-        // ------------- Exercise 12 --------------- //
-
+        // ------------- Exercise 13 --------------- //
 //  propiedades de los objetos en camel case
 //  accesors de js
 //  template literal  `${this.height.value} $ {this.geiht.unit}`
@@ -293,7 +309,7 @@ garbageDumps: {
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-        // ------------- Exercise 13 --------------- //
+        // ------------- Exercise 14 --------------- //
 
 // paso un constructor que paso por el objeto console /window
 // pasaron por una funcion contructura
@@ -319,6 +335,14 @@ function Dog(breed, name, size) {
   
   
 
+
+
+
+
+
+//  OBJETOS DECLARATIVOS O LITERALES    //  Y
+//  OBJETOS CONSTRUIDOS
+//  https://yeisondaza.com/entendiendo-los-objetos-en-javascript   
 
 
 
