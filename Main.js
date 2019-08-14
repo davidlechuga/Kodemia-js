@@ -93,7 +93,8 @@ dogObj.bark
 dogObj.bark()
 
 
-
+//  las propiedades pueden anidar funciones que se interpretan
+//  como acciones de los objetos
 var person  = {
     firtName: 'Luis',
     lastName: 'Ortiz',
@@ -102,6 +103,12 @@ var person  = {
         return `Hola soy ${this.firtName}` 
     }
 }
+
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+        // ------------- Exercise 13 --------------- //
 
 //metodos pordemos ocupar las propiedades del objetos
 //.this es el scope de nuestros objetos
@@ -133,21 +140,19 @@ var DLH =
 ]
 
 
-
 var arrays = DLH.map (function (DLH) {
     return DLH.score
 } )
 
+for ( var i = 0 ; i < arrays.length; i++) {
+	
+	suma += arrays[i]
+}
+
 
 
 // desestructuracion , sacar sus propiedades y alamacenarla
-
-
 //  CESAR INCRIPTING
-
-// DADO UN NUMERO VAMOS A AUMENTAR 
-
-
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
@@ -155,9 +160,9 @@ var arrays = DLH.map (function (DLH) {
 //  propiedades de los objetos en camel case
 //  accesors de js
 //  template literal  `${this.height.value} $ {this.geiht.unit}`
-// accesors
-// con el setter le damos formato a las propiedades.
-// GET   <----->  SETTERS
+//  accesors
+//  con el setter le damos formato a las propiedades.
+//  GET   <----->  SETTERS
 
 var persona = {
 
@@ -177,7 +182,7 @@ height: {
 
 
 get getHeight() {
-    retun `${this.height.value} $ {this.geiht.unit}`
+    return `${this.height.value} ${this.weight.unit}`
 }
 
               }
@@ -215,10 +220,6 @@ garbageDumps: {
 
               }
 
-
-
-
-
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
@@ -245,13 +246,6 @@ function Dog(breed, name, size) {
   var firstDog = new Dog('Dash hound', 'Sr. Salchicha', 'S')
   
   
-  
-  
-
-
-
-
-
 
 //  OBJETOS DECLARATIVOS O LITERALES    //  Y
 //  OBJETOS CONSTRUIDOS
