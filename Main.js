@@ -90,10 +90,38 @@ var nodes = [
                 'text': 'cosa'
             }, {
                 'tag': 'li',
-                'text': 'estudien!'
+                'text': 'AQUI!'
             }
         ]
     },
+]
+
+
+
+const buildNodes = (nodes, parent) => {
+    nodes.forEach(({ tag, children }) => {
+        let nodeParent = document.createElement(tag)
+        nodeParent.classList.add('uls')
+
+        children.forEach(({ tag, text }) => {
+            let node = document.createElement(tag)
+            node.classList.add('tags')
+
+            let nodeText = document.createTextNode(text)
+            node.appendChild(nodeText)
+            nodeParent.appendChild(node)
+        })
+        parent.appendChild(nodeParent)
+    });
+}
+const parent = document.getElementById('container')
+buildNodes(nodes, parent)
+
+
+
+
+/////////////////////
+var count = [
     {
         'tag': 'ul',
         'children': [
@@ -112,19 +140,22 @@ var nodes = [
                 'text': 'estudien!'
             }
         ]
-    },
-]
-const buildNodes = (nodes, parent) => {
-    nodes.forEach(({ tag, children }) => {
-        let nodeParent = document.createElement(tag)
-        children.forEach(({ tag, text }) => {
-            let node = document.createElement(tag)
-            let nodeText = document.createTextNode(text)
-            node.appendChild(nodeText)
-            nodeParent.appendChild(node)
-        })
-        parent.appendChild(nodeParent)
-    });
+    } 
+             ]
+/////////////////////
+
+
+const buildClicks = (count)  =>{
+
+
+                               }
+
+
+/////////////////////
+
+
+var counter =0
+
+const increment = () =>  {
+    console.log(++counter)
 }
-const parent = document.getElementById('container')
-buildNodes(nodes, parent)

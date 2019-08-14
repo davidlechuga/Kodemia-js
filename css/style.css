@@ -1,0 +1,19 @@
+#container{
+    background: #ddd;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.tags {
+    list-style: none;
+}
+
+.uls:hover{
+    background: yellow;
+}
+
+.uls {
+    padding: 10px;
+}
