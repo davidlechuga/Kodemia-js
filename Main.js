@@ -142,7 +142,7 @@ var count = [
         ]
     } 
              ]
-/////////////////////
+/////////////////////  clase 15 de agos //////
 
 
 const buildClicks = (count)  =>{
@@ -159,3 +159,42 @@ var counter =0
 const increment = () =>  {
     console.log(++counter)
 }
+
+
+////////////////////
+
+document
+    .getElementsByTagName('body')[0]
+    .addEventListener('click', function(){
+
+        e.style.backgroundColor = 'peru'
+     
+    });
+
+
+    /////////////////  
+
+    document 
+        .getElementsByClassName('example')[0]
+        .addEventListener('mouseover', (e)=>{
+            e.target.style.backgroundColor = 'peru'
+        });
+
+        var arrays = 
+        document
+            .getElementsByClassName('example')
+            console.log(arrays)
+
+        
+             for (var i = 0; i<arrays.length;i++){
+
+             }
+                    
+
+
+
+
+     
+    
+        ///////////
+
