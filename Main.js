@@ -182,12 +182,14 @@ height: {
 
 
 get getHeight() {
-    return `${this.height.value} ${this.weight.unit}`
+    return `${this.height.value}${this.weight.unit}`
 }
 
               }
 
 
+
+/////////   crea un objeto con sus propiedades
 
 var street = {
 
