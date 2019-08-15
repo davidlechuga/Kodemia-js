@@ -113,7 +113,7 @@ var person  = {
 //metodos pordemos ocupar las propiedades del objetos
 //.this es el scope de nuestros objetos
 //arrow function no tienen scope  y es global
-
+var suma = 0
 var DLH =
 [
 
@@ -145,8 +145,8 @@ var arrays = DLH.map (function (DLH) {
 } )
 
 for ( var i = 0 ; i < arrays.length; i++) {
-	
-	suma += arrays[i]
+    total = suma += arrays[i]
+    promedio = total / arrays.length
 }
 
 
@@ -250,7 +250,6 @@ function Dog(breed, name, size) {
 //  OBJETOS DECLARATIVOS O LITERALES    //  Y
 //  OBJETOS CONSTRUIDOS
 //  https://yeisondaza.com/entendiendo-los-objetos-en-javascript   
-
 
 
 
