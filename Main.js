@@ -1,200 +1,35 @@
-var nodes = [
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'estudien!'
-            }
-        ]
-    },
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'estudien!'
-            }
-        ]
-    },
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'estudien!'
-            }
-        ]
-    },
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'estudien!'
-            }
-        ]
-    },
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'AQUI!'
-            }
-        ]
-    },
-]
 
 
 
-const buildNodes = (nodes, parent) => {
-    nodes.forEach(({ tag, children }) => {
-        let nodeParent = document.createElement(tag)
-        nodeParent.classList.add('uls')
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://
+        // ------------- Exercise 14 --------------- //
 
-        children.forEach(({ tag, text }) => {
-            let node = document.createElement(tag)
-            node.classList.add('tags')
-
-            let nodeText = document.createTextNode(text)
-            node.appendChild(nodeText)
-            nodeParent.appendChild(node)
-        })
-        parent.appendChild(nodeParent)
-    });
-}
-const parent = document.getElementById('container')
-buildNodes(nodes, parent)
+// paso un constructor que paso por el objeto console /window
+// pasaron por una funcion contructura
+//  constructor = define el molde de un objeto en general
+//  funciones constructoras CAPITALIZE no CAMEL CASE   DogObjet    //  (no)  dogObj
+// no puedes ser anonimas , ni arrow porque no tienen scope
+//  dado palabra function reservada tenemos acceso a scope 
 
 
+//  almacenando en memoria una nueva instaciacion del objeto DOG
 
 
-/////////////////////
-var count = [
-    {
-        'tag': 'ul',
-        'children': [
-            {
-                'tag': 'li',
-                'text': 'enjoy'
-            },
-            {
-                'tag': 'li',
-                'text': 'otra'
-            }, {
-                'tag': 'li',
-                'text': 'cosa'
-            }, {
-                'tag': 'li',
-                'text': 'estudien!'
-            }
-        ]
-    } 
-             ]
-/////////////////////  clase 15 de agos //////
+// Constructor function
 
-
-const buildClicks = (count)  =>{
-
-
-                               }
-
-
-/////////////////////
-
-
-var counter =0
-
-const increment = () =>  {
-    console.log(++counter)
-}
-
-
-////////////////////
-
-document
-    .getElementsByTagName('body')[0]
-    .addEventListener('click', function(){
-
-        e.style.backgroundColor = 'peru'
-     
-    });
-
-
-    /////////////////  
-
-    document 
-        .getElementsByClassName('example')[0]
-        .addEventListener('mouseover', (e)=>{
-            e.target.style.backgroundColor = 'peru'
-        });
-
-        var arrays = 
-        document
-            .getElementsByClassName('example')
-            console.log(arrays)
-
-        
-             for (var i = 0; i<arrays.length;i++){
-
-             }
-                    
-
-
-
-
-     
+function Dog(breed, name, size) {
+        this.breed = breed
+        this.name = name
+        this.size = size
+      }
+      var firstDog = new Dog('Dash hound', 'Sr. Salchicha', 'S')
+      
+      
     
-        ///////////
-
+    //  OBJETOS DECLARATIVOS O LITERALES    //  Y
+    //  OBJETOS CONSTRUIDOS
+    //  https://yeisondaza.com/entendiendo-los-objetos-en-javascript   
+    
+    
